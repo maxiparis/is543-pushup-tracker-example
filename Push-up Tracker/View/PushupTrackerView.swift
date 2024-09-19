@@ -8,18 +8,20 @@
 import SwiftUI
 
 struct PushupTrackerView: View {
+    var vm: PushupViewModel
+    
     var body: some View {
         NavigationView {
             Form {
                 HStack {
                     Text("Grand total push-ups: ")
                     Spacer()
-                    Text("7573")
+                    Text(vm.totalCount.description)
                 }
                 HStack {
                     Text("Push-ups that count for Kyle: ")
                     Spacer()
-                    Text("1100")
+                    Text(vm.pushupsThatCount.description)
                 }
                 Button {
                     //action
@@ -35,5 +37,5 @@ struct PushupTrackerView: View {
 }
 
 #Preview {
-    PushupTrackerView()
+    PushupTrackerView(vm: PushupViewModel())
 }

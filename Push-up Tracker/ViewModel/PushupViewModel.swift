@@ -11,7 +11,7 @@ import Foundation
 class PushupViewModel {
     
     //MARK: - Properties
-    private var pushupData: PushupModel
+    private var pushupData = PushupModel()
     
     //MARK: - Model access
     var totalCount: Int {
@@ -27,7 +27,7 @@ class PushupViewModel {
         //TODO
     }
     
-    func deleetWorkout(id: UUID) {
+    func deleteWorkout(id: UUID) {
         //TODO
     }
     

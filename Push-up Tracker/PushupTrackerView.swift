@@ -29,7 +29,8 @@ struct PushupTrackerView: View {
                     Label("Report", systemImage: "square.and.arrow.up")
                 }
             }
-        }.navigationTitle("Push-Up Tracker")
+            .navigationTitle("Push-Up Tracker")
+        }
     }
 }
 

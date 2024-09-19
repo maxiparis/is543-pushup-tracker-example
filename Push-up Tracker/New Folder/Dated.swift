@@ -19,6 +19,7 @@ protocol Dated {
 extension Dated {
     func isSameDate(as other: Self) -> Bool {
         //TODO
+        return true
     }
     
     func yearMonthDate() -> (year: Int, month: Int, day: Int) { //returns a tuple

@@ -11,7 +11,7 @@ struct PushupTrackerView: View {
     var vm: PushupViewModel
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             Form {
                 HStack {
                     Text("Grand total push-ups: ")

@@ -45,7 +45,7 @@ struct PushupTrackerView: View {
     var workoutSection: some View {
         Section("Individual Workouts") {
             List {
-                if !vm.workouts.isEmpty {
+                if vm.workouts.isEmpty {
                     Button {
                         //TODO: needs work
                     } label: {

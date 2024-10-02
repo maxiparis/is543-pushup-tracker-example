@@ -64,9 +64,10 @@ struct PushupModel {
             if let date = Calendar.current.date(from: dateComponents) {
                 let workout = WorkoutReport(count: count, date: date)
                 
-                if workouts.isDateUnique(withRespectTo: workout) {
-                    workouts.append(workout)
-                }
+//                if workouts.isDateUnique(withRespectTo: workout) {
+                print("adding workout")
+                workouts.append(workout)
+//                }
             }
         }
     }
